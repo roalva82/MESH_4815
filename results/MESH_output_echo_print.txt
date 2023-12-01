@@ -1,0 +1,287 @@
+ MESH 1.4 ---  (1813)
+ 
+ READING: MESH_drainage_database.nc
+   WARNING: The variable 'LandUse' is an unknown or unsupported data format (Code: 1).
+   REMARK: At least one river class is required when channel routing is enabled. The number of river classes is not defined or the 'IAK' or 'IRVR' map is missing in the file. Assuming one river class.
+   REMARK: No drainage area 'DA' variable found. Accumulating areas from surface area 'GridArea' by flow direction 'Next'.
+   REMARK: No 'Reach' or 'IREACH' variable found. Assuming no reservoirs or routed lakes exist inside the basin.
+   REMARK: No 'Bankfull' variable found. Setting the background field to zero.
+   REMARK: No 'Chnl' or 'ICHNL' variable found. Assuming a single channel class.
+   Total number of grids: 693
+   Total number of grids inside the basin: 602
+   Side length of grid: 1.00000000 m
+   Number of GRUs: 13
+   Number of land-based tiles: 4889
+   Number of river classes: 1
+ READING: MESH_input_soil_levels.txt
+   Number of soil layers: 3
+ READING: MESH_parameters_CLASS.ini
+   WARNING: The number of grid cells does not match the drainage database.
+   Drainage database: 693
+   MESH_parameters_CLASS.ini: 51
+ READING: MESH_parameters_hydrology.ini
+ READING: MESH_parameters.txt
+   Active parameters in file: 1
+ 
+ READING: Resume run configuration
+   RESUMEFLAG is not active: RESUMEFLAG off
+   SAVERESUMEFLAG is not active: SAVERESUMEFLAG off
+ READING: MESH_input_streamflow.txt
+   Skipping 121 records.
+   Number of streamflow gauges: 1
+             GAUGE              IY              JX            RANK        DA (km2)
+          05BL027                1             650             650    27.46902
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_P_FB_SFC' to the 'FSIN' variable.
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_P_FI_SFC' to the 'FLIN' variable.
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_A_PR0_SFC' to the 'PRE' variable.
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_P_TT_1.5m' to the 'TA' variable.
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_P_UVC_10m' to the 'UV' variable.
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_P_P0_SFC' to the 'PRES' variable.
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_P_HU_1.5m' to the 'QA' variable.
+ 
+ 
+ The simulation starts at: 1980/05/01 00:00:00.000000
+ Checking the start dates of the input files...
+   Skipping 2897 records in 'MESH_forcing.nc'.
+   Skipping 2897 records in 'MESH_forcing.nc'.
+   Skipping 2897 records in 'MESH_forcing.nc'.
+   Skipping 2897 records in 'MESH_forcing.nc'.
+   Skipping 2897 records in 'MESH_forcing.nc'.
+   Skipping 2897 records in 'MESH_forcing.nc'.
+   Skipping 2897 records in 'MESH_forcing.nc'.
+ 
+ RUNCLASS36 is active.
+   BASEFLOW component is ACTIVE.
+ READING: outputs_balance.txt
+   WARNING: No output variables were found in the file.
+ Reached simulation end date.
+ 
+ End of run prognostic states
+    Number of GRUs:   13
+ 
+ Average values
+    GRU   1:
+      2.495     3.859     2.067    -3.106    -0.162     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.193     0.192     0.226     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.091     0.046     2.123     0.791   240.864    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   2:
+      1.665     3.082     1.781    -3.914    -0.222     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.195     0.197     0.226     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.094     0.097     2.578     0.800   235.591    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   3:
+      6.830     8.156     3.101     3.254     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.187     0.160     0.198     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.054     0.000     0.033     0.730   210.882    -0.502  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   4:
+      1.868     3.874     1.896    -0.620    -0.146     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.189     0.186     0.225     0.001     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.023     0.027     4.366     0.793   248.380    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   5:
+      3.685     5.556     2.306    -4.254    -0.003     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.255     0.252     0.224     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.058     0.043     5.488     0.795   299.725    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   6:
+      3.188     4.342     2.217    -1.889    -0.004     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.269     0.269     0.244     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.132     0.164     3.440     0.791   274.473    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   7:
+      1.338     3.610     2.078     0.000    -5.788     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.221     0.227     0.237     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.053     0.524     1.482     0.793   158.402    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   8:
+      2.523     4.199     2.484    -0.952    -3.222     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.228     0.241     0.239     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.077     0.176     2.064     0.802   206.080    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   9:
+      5.803     6.845     2.415     1.710    -0.001     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.309     0.312     0.303     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.196     0.029     0.420     0.807   267.184    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  10:
+      2.030     4.817     2.467     0.000    -0.925     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.172     0.201     0.227     0.001     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     2.613     0.802   212.617     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  11:
+      1.646     2.923     1.824     0.000    -0.039     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.305     0.320     0.305     0.004     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     4.511     0.789   263.651     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  12:
+      4.494     8.349     3.857     0.000    -0.090     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.152     0.116     0.322     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     1.817     0.800   207.461     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  13:
+     -0.600    -0.098    -1.657     0.000    -9.176    -0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.000     0.000     0.000     0.000     0.000     0.000     0.039  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     7.948     0.812   248.678     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+ 
+ Minimum values
+    GRU   1:
+      0.088     0.691     1.379   -10.487    -2.429     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.181     0.172     0.222     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.644   117.713    -0.502  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   2:
+      0.351     1.845     1.408    -8.962    -2.037     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.192     0.189     0.224     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.090     0.721   177.235    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   3:
+      3.876     4.974     1.793    -3.563     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.174     0.155     0.196     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.677   175.532    -0.503  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   4:
+      0.021     0.966     1.284    -4.893    -1.425     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.172     0.154     0.214     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.644   177.032    -0.503  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   5:
+      0.175     2.573     1.678   -13.693    -0.253     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.214     0.196     0.218     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.644   117.713    -0.502  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   6:
+      0.476     1.306     1.539   -13.871    -0.364     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.238     0.231     0.235     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.644   149.191    -0.502  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   7:
+      1.338     3.610     2.078     0.000    -5.788     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.221     0.227     0.237     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.053     0.524     1.482     0.793   158.402    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   8:
+      0.378     0.917     1.730   -14.442   -10.153     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.210     0.225     0.236     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.644   150.005    -0.502  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   9:
+      1.330     1.623     1.651    -2.744    -0.006     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.292     0.299     0.281     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.723   201.205    -0.502  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  10:
+      0.076     0.823     1.642     0.000    -5.486     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.138     0.193     0.226     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.644   111.705     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  11:
+     -0.000     0.000     0.820     0.000    -0.643     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.160     0.251     0.297     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.644   117.713     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  12:
+      0.642     2.219     2.856     0.000    -2.127     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.102     0.107     0.310     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.000     0.644   112.041     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  13:
+     -1.642    -0.243    -1.790     0.000   -15.330    -0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.000     0.000     0.000     0.000     0.000     0.000     0.003  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000     0.575     0.694   176.359     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+ 
+ Maximum values
+    GRU   1:
+      7.527     8.498     3.262     4.733     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.214     0.207     0.229     0.004     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.420     0.897    25.405     0.840   316.906    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   2:
+      3.622     4.516     2.514     0.674     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.208     0.206     0.229     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.416     0.496     8.640     0.837   315.988    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   3:
+      8.765    10.027     3.361     5.667     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.213     0.174     0.203     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.180     0.000     2.001     0.787   236.893    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   4:
+      7.425     8.590     3.240     5.822     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.201     0.206     0.229     0.008     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.597     0.331    27.753     0.837   316.612    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   5:
+      8.475    10.269     3.503     4.677     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.278     0.272     0.229     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.225     1.099    37.070     0.840   365.657    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   6:
+      8.190     9.436     3.370     4.487     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.284     0.284     0.254     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.400     2.007    33.369     0.837   336.185    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   7:
+      1.338     3.610     2.078     0.000    -5.788     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.221     0.227     0.237     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.053     0.524     1.482     0.793   158.402    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   8:
+      8.487    10.188     3.753     4.941     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.258     0.258     0.243     0.001     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.238     1.434    23.140     0.837   303.107    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU   9:
+      8.255     9.288     2.755     4.640     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.331     0.339     0.331     0.000     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.400     0.480     8.853     0.837   308.983    -0.501  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  10:
+      6.527     8.911     3.846     0.000     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.203     0.212     0.228     0.009     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000    25.074     0.840   300.558     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  11:
+      5.327     6.373     2.815     0.000     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.365     0.364     0.316     0.039     0.002     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000    28.800     0.840   341.044     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  12:
+      9.297    12.930     5.281     0.000     0.000     0.000  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.208     0.137     0.346     0.002     0.000     0.000     0.000  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000    19.282     0.840   295.159     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+    GRU  13:
+     -0.066    -0.000    -1.551     0.000     0.000     0.001  !> TBAR(1:3)/TCAN/TSNO/TPND
+      0.000     0.000     0.000     0.000     0.000     0.000     0.140  !> THLQ(1:3)/THIC(1:3)/ZPND
+      0.000     0.000    33.273     0.839   346.822     1.000  !> RCAN/SNCAN/SNO/ALBS/RHOS/GRO
+ 
+ Basin water balance end of run totals (mm)
+   Total precipitation              =   49.04554
+   Total evapotranspiration         =   45.30461
+   Total runoff                     =   113.1027
+     Overland         =   20.02531
+     Lateral          =   90.75521
+     Drainage (soil)  =   2.322262
+   Change in storage                =  -97.29254
+     Initial          =   598.6391
+     Final            =   501.3466
+ 
+ 
+ Program has terminated normally.
+ 
+ Time = 36.97905 seconds.

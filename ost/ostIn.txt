@@ -1,0 +1,35 @@
+ProgramType  DDS
+ModelExecutable  ../sa_mesh
+ModelSubDir .
+ObjectiveFunction GCOP
+
+#PreserveBestModel .save_best.bat
+ 
+BeginFilePairs
+MESH_parameters_CLASS.tpl ; ../MESH_parameters_CLASS.ini
+EndFilePairs
+
+BeginParams
+#name     init.	  lower  	upper	 	transformations		format
+___x1  random  0.0001   	0.50       	none   none   none	E8.1
+EndParams
+
+BeginInitParams
+4.0E-2
+EndInitParams
+
+BeginResponseVars
+#name	filename		keyword		line		col	token
+NSE	../results/NSW.txt ;	OST_NULL	0		1	','
+EndResponseVars
+
+BeginGCOP
+CostFunction NSE
+PenaltyFunction APM
+EndGCOP
+
+BeginDDSAlg
+PerturbationValue 0.2
+MaxIterations 20
+UseInitialParamValues
+EndDDSAlg
