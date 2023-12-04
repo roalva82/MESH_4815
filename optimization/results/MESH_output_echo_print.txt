@@ -284,4 +284,4 @@
  
  Program has terminated normally.
  
- Time = 32.70991 seconds.
+ Time = 32.14968 seconds.

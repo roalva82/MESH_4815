@@ -15,12 +15,12 @@ ___x1  	  0.002	  0.0001   	0.50       	none   none   none
 EndParams
 
 BeginResponseVars
-#name	filename		keyword		line		col	token
-NSE	../results/NSW.txt ;	OST_NULL	0		1	','
+#name	filename			keyword		line	col	token
+RMSE	../results/Metrics_Out.txt ;	OST_NULL	1	2	' '
 EndResponseVars
 
 BeginGCOP
-CostFunction NSE
+CostFunction RMSE
 PenaltyFunction APM
 EndGCOP
 
