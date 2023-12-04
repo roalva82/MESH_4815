@@ -10,13 +10,9 @@ MESH_parameters_CLASS.tpl ; ../MESH_parameters_CLASS.ini
 EndFilePairs
 
 BeginParams
-#name     init.	  lower  	upper	 	transformations		format
-___x1  random  0.0001   	0.50       	none   none   none	E8.1
+#name     init.	  lower  	upper	 	transformations	
+___x1  	  0.002	  0.0001   	0.50       	none   none   none
 EndParams
-
-BeginInitParams
-4.0E-2
-EndInitParams
 
 BeginResponseVars
 #name	filename		keyword		line		col	token
