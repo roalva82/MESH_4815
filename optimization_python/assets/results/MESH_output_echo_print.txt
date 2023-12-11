@@ -1,0 +1,64 @@
+ MESH 1.4 ---  (1813)
+ 
+ READING: MESH_drainage_database.nc
+   WARNING: The variable 'LandUse' is an unknown or unsupported data format (Code: 1).
+   REMARK: At least one river class is required when channel routing is enabled. The number of river classes is not defined or the 'IAK' or 'IRVR' map is missing in the file. Assuming one river class.
+   REMARK: No drainage area 'DA' variable found. Accumulating areas from surface area 'GridArea' by flow direction 'Next'.
+   REMARK: No 'Reach' or 'IREACH' variable found. Assuming no reservoirs or routed lakes exist inside the basin.
+   REMARK: No 'Bankfull' variable found. Setting the background field to zero.
+   REMARK: No 'Chnl' or 'ICHNL' variable found. Assuming a single channel class.
+   Total number of grids: 693
+   Total number of grids inside the basin: 602
+   Side length of grid: 1.00000000 m
+   Number of GRUs: 13
+   Number of land-based tiles: 4889
+   Number of river classes: 1
+ READING: MESH_input_soil_levels.txt
+   Number of soil layers: 3
+ READING: MESH_parameters_CLASS.ini
+   WARNING: The number of grid cells does not match the drainage database.
+   Drainage database: 693
+   MESH_parameters_CLASS.ini: 51
+ READING: MESH_parameters_hydrology.ini
+ READING: MESH_parameters.txt
+   Active parameters in file: 1
+ 
+ READING: Resume run configuration
+   RESUMEFLAG is not active: RESUMEFLAG off
+   SAVERESUMEFLAG is not active: SAVERESUMEFLAG off
+ READING: MESH_input_streamflow.txt
+   Skipping 122 records.
+   Number of streamflow gauges: 1
+             GAUGE              IY              JX            RANK        DA (km2)
+          05BL027                1             650             650    27.46902
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_P_FB_SFC' to the 'FSIN' variable.
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_P_FI_SFC' to the 'FLIN' variable.
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.
+   REMARK: Mapping the field 'RDRS_v2.1_A_PR0_SFC' to the 'PRE' variable.
+ READING: MESH_forcing.nc
+   Checking the spatial reference of the file.
+   INFO: The projection of the file is 'LATLONG'.
+   WARNING: An error occurred reading the units of the 'subbasin' variable (Code: -43).
+   WARNING: An error occurred reading the units of the 'crs' variable (Code: -43).
+   WARNING: The calendar 'proleptic_gregorian' of the 'time' variable is unknown or not supported.
+   WARNING: The reference calendar for the 'time' variable is not set or is not equal to 'gregorian' or 'standard'. Errors may occur with deriving time-stamps from the file.

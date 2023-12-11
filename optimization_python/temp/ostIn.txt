@@ -1,0 +1,109 @@
+#Basic Configuration for Ostrich Program
+
+#Essential variables
+ProgramType ParallelDDS
+ModelExecutable ./kgebias_calibrate.py
+ModelSubdir mod_
+ObjectiveFunction GCOP
+
+#Template File Configuration
+BeginFilePairs
+par_paired.txt ; data/par.txt
+EndFilePairs
+
+BeginExtraFiles
+kgebias_calibrate.py
+EndExtraFiles
+
+BeginExtraDirs
+data
+EndExtraDirs
+
+
+BeginParams
+___ttmp8 2.909494 -2.67 3.0 none none none
+___ttmp10 2.98675 -2.67 3.0 none none none
+___ttmp15 0.696973 -2.67 3.0 none none none
+___cmlt8 4.220418 1.0 10.0 none none none
+___cmlt10 1.183985 1.0 10.0 none none none
+___cmlt15 2.71162 1.0 10.0 none none none
+___cmrad8 0.771495 0.16 1.5 none none none
+___cmrad10 0.202684 0.16 1.5 none none none
+___cmrad15 0.9956341 0.16 1.5 none none none
+___kc8 1.232747 0.6 1.3 none none none
+___kc10 1.279374 0.6 1.3 none none none
+___kc15 1.276205 0.6 1.3 none none none
+___rrcs12 0.0516716 0.05 0.6 none none none
+___rrcs13 0.07328213 0.05 0.6 none none none
+___rrcs22 0.002158998 0.001 0.45 none none none
+___rrcs23 0.0497613 0.001 0.45 none none none
+___rrcs3 0.08034619 0.0 0.1 none none none
+___bcosby2 13.12282 1.0 20.0 none none none
+___bcosby3 19.10483 1.0 20.0 none none none
+___srrcs8 0.1670713 0.01 0.2 none none none
+___srrcs10 0.1390055 0.01 0.2 none none none
+___srrcs15 0.1754971 0.01 0.2 none none none
+___rivvel 0.3187148 0.1 10.0 none none none
+___damp 0.9003751 0.1 0.95 none none none
+___bfroznsoil2 2.9152 1.0 5.0 none none none
+___bfroznsoil3 2.9152 1.0 5.0 none none none
+___srrate2 0.2 0.05 0.5 none none none
+___srrate3 0.2 0.05 0.5 none none none
+___wcwp12 0.214 0.01 0.5 none none none
+___wcwp13 0.1479 0.01 0.5 none none none
+___wcwp22 0.256 0.01 0.5 none none none
+___wcwp23 0.0984 0.01 0.5 none none none
+___wcwp32 0.058 0.01 0.5 none none none
+___wcwp33 0.3639 0.01 0.5 none none none
+___wcfc12 0.1758 0.1 0.5 none none none
+___wcfc13 0.3526 0.1 0.5 none none none
+___wcfc22 0.1966 0.1 0.5 none none none
+___wcfc23 0.3818 0.1 0.5 none none none
+___wcfc32 0.2075 0.1 0.5 none none none
+___wcfc33 0.4055 0.1 0.5 none none none
+___wcep12 0.4168 0.01 0.9 none none none
+___wcep13 0.3743 0.01 0.9 none none none
+___wcep22 0.2773 0.01 0.9 none none none
+___wcep23 0.0329 0.01 0.9 none none none
+___wcep32 0.3004 0.01 0.9 none none none
+___wcep33 0.4832 0.01 0.9 none none none
+___mwind 12.0 5.0 25.0 none none none
+___ilratk1 3.0 1.0 30.0 none none none
+___ilratk2 3.0 1.0 30.0 none none none
+___ilratk3 3.0 1.0 30.0 none none none
+___ilratk4 3.0 1.0 30.0 none none none
+___ilratk5 3.0 1.0 30.0 none none none
+___ilratp1 1.0 1.0 2.0 none none none
+___ilratp2 1.0 1.0 2.0 none none none
+___ilratp3 1.0 1.0 2.0 none none none
+___ilratp4 1.0 1.0 2.0 none none none
+___ilratp5 1.0 1.0 2.0 none none none
+___illdepth1 12.0 8.0 25.0 none none none
+___illdepth2 12.0 8.0 25.0 none none none
+___illdepth3 12.0 8.0 25.0 none none none
+___illdepth4 12.0 8.0 25.0 none none none
+___illdepth5 12.0 8.0 25.0 none none none
+___lp 0.771 0.5 1.0 none none none
+___epotdist 5.6679 2.0 6.0 none none none
+___alb8 0.2 0.1 0.5 none none none
+___alb10 0.2 0.1 0.5 none none none
+___alb15 0.2 0.1 0.5 none none none
+EndParams
+
+#Output variables to analyze
+BeginResponseVars
+#name   filename            keyword         line    col     token
+KGE average_lognse.txt ; OST_NULL 0 1 ' '
+EndResponseVars
+
+BeginGCOP
+CostFunction KGE
+PenaltyFunction APM
+EndGCOP
+
+#DDS algorithm setup
+BeginParallelDDSAlg
+PerturbationValue 0.2
+MaxIterations 5
+UseInitialParamValues
+EndParallelDDSAlg

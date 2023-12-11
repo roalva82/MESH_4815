@@ -1,0 +1,8 @@
+STOP -1
+ MESH 1.4 ---  (1813)
+ 
+ READING: MESH_input_run_options.ini
+   ERROR: Unable to open the file. Check if the file exists.
+ 
+ ERROR: Errors occurred during initialization.
+ Abnormal exit.
