@@ -98,7 +98,7 @@ metric = -1.0*nse(sim,obs)
 
 import csv
 
-with open('./MetricTest.csv', 'w', newline='') as file:
+with open('./Metric.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow([metric])
     
