@@ -2,6 +2,10 @@ import subprocess
 import os
 import pandas as pd
 import numpy as np
+from typing import Tuple
+
+cwd = os.getcwd()
+print(f'Here: {cwd}')
 
 def remove_invalid_values(simulated, observed):
     valid_indices = np.where((observed != -9999) & (simulated != -9999))
@@ -40,7 +44,7 @@ def remove_nan_rows(
 def nse(simulated, observed):
 	denominator = np.sum((observed - np.mean(observed)) ** 2)
 	numerator = np.sum((simulated - observed) ** 2)
-	nse_val = 1 - numerator / denominator
+	nse = 1 - numerator / denominator
 	return nse
 
 def kge(simulated, observed):
@@ -76,7 +80,7 @@ subprocess.run([mesh_command])
 
 # read simulated data
 sim_df = pd.read_csv('./results/RFF_D.csv', header=None)
-sim = sim_df[649]
+sim = sim_df[649].to_numpy()
 
 # read observed data
 obs_df = pd.read_csv('../obs/05BL027_Daily_Flow_ts.csv', skiprows=1, header=None, names=['ID','PARAM','Date','Flow','SYM'])
@@ -86,14 +90,16 @@ obs_df['Date'] = pd.to_datetime(obs_df['Date'])
 start_date = '1980-05-02'
 end_date = '1980-05-29'
 mask = (obs_df['Date'] >= start_date) & (obs_df['Date'] <= end_date)
-obs = obs_df.loc[mask]['Flow']
+obs = obs_df.loc[mask]['Flow'].to_numpy()
 
 # compute and export metric
-metric = -nse(sim,obs)
-df = pd.array(metric)
+metric = -1.0*nse(sim,obs)
 
-cwd = os.getcwd()
-print(f'Here: {cwd}')
-df.to_csv('./Metric.csv',header=False, index=False)
 
+import csv
+
+with open('./MetricTest.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow([metric])
+    
 
