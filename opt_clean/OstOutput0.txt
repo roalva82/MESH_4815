@@ -25,13 +25,13 @@
 --------------------------------------------------------------------------
 
 Ostrich Setup
-Model                  : ./run.py > OstExeOut.txt 2>&1
+Model                  : ./assets/run.py > OstExeOut.txt 2>&1
 Algorithm              : Dynamically Dimensioned Search Algorithm (DDS)
 Objective Function     : GCOP
 Number of Parameters   : 1
 Number of Tied Params  : 0
 Number of Observations : 0
-Seed for Random Nums.  : 1707798803
+Seed for Random Nums.  : 1707869500
 Number of Resp. Vars        : 1
 Number of Tied Resp. Vars   : 0
 Number of Constraints       : 0

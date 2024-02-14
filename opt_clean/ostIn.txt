@@ -1,12 +1,12 @@
 ProgramType  DDS
-ModelExecutable  ./run.py
-ModelSubDir mod
+ModelExecutable  ./assets/run.py
 ObjectiveFunction GCOP
 
 #PreserveBestModel .save_best.bat
 
 BeginExtraDirs
 assets
+obs
 EndExtraDirs
 
 #BeginExtraFiles
@@ -28,7 +28,7 @@ EndInitParams
 
 BeginResponseVars
 #name	filename		keyword		line		col	token
-RMSE	assets/Metric.csv ;	OST_NULL	0		1	','
+RMSE	./assets/Metric.csv ;	OST_NULL	0		1	','
 EndResponseVars
 
 BeginGCOP
