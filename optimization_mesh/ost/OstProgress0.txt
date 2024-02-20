@@ -1,4 +1,0 @@
-{
-       "% progress": 100.000000 
-       "seconds remaining": 0.000000 
-}
