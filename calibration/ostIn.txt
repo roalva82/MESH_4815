@@ -8,7 +8,7 @@ model
 EndExtraDirs
 
 BeginFilePairs
-MESH_parameters_CLASS.tpl ; ./assets/MESH_parameters_CLASS.ini
+MESH_parameters_CLASS.tpl ; ./model/MESH_parameters_CLASS.ini
 EndFilePairs
 
 BeginParams
@@ -29,6 +29,9 @@ BeginGCOP
 CostFunction NSE
 PenaltyFunction APM
 EndGCOP
+
+BeginConstraints   
+EndConstraints
 
 RandomSeed 12345
 
