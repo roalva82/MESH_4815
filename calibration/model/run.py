@@ -14,11 +14,11 @@ mesh_command  = './sa_mesh'
 subprocess.run([mesh_command])
 
 # read simulated data
-sim_df = pd.read_csv('./results/RFF_D.csv', header=None)
+sim_df = pd.read_csv('./results/ROF_D.csv', header=None)
 sim = sim_df[649].to_numpy()
 
 # read observed data
-obs_df = pd.read_csv('../obs/05BL027_Daily_Flow_ts.csv', skiprows=1, header=None, names=['ID','PARAM','Date','Flow','SYM'])
+obs_df = pd.read_csv('./data_obs/05BL027_Daily_Flow_ts.csv', skiprows=1, header=None, names=['ID','PARAM','Date','Flow','SYM'])
 obs_df['Date'] = pd.to_datetime(obs_df['Date'])
 
 # extract values for observed data
@@ -31,7 +31,7 @@ obs = obs_df.loc[mask]['Flow'].to_numpy()
 metric = -1.0*nse(sim,obs)
 
 
-with open('./Metric.csv', 'w', newline='') as file:
+with open('./results/Metric.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow([metric])
     
